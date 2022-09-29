@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>помошь</title>
+    <title>помощь</title>
 </head>
 <body>
 
 <h1>Мы уже выехали </h1>
+
+<ul>
+    {% for m in menu %}
+    <li>{{m.name}}</li>
+    {% endfor %}
+</ul>
 
 </body>
 </html>

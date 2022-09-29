@@ -6,5 +6,11 @@
 </head>
 <body>
 <h1> Информация на сайте: Бета версия!</h1>
+
+<ul>
+    {% for m in menu %}
+    <li>{{m.name}}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
