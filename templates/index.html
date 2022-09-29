@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if title %}
+    <title> {{title}}</title>
+    {% else %}
     <title>Моя первая страница</title>
+    {% endif %}
 </head>
 <body>
+    {% if title %}
+    <h1> {{title}} </h1>
+    {% else %}
+    <h1>Моя первая страница </h1>
 <h1> Здравствуйте {{user.username}} </h1>
+ {% endif %}
 </body>
 </html>
