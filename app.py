@@ -30,7 +30,7 @@ def people(name):
 
 @app.route('/table/')
 def t1():
-    return render_template("table.html", title=titl)
+    return render_template("table.html", title=title)
 
 
 if __name__ == '__main__':
